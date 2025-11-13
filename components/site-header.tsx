@@ -31,6 +31,10 @@ export function SiteHeader() {
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-6 lg:flex">
+            <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+              Home
+            </Link>
+
             <div
               className="relative"
               onMouseEnter={() => setActiveDropdown("about")}
@@ -40,19 +44,21 @@ export function SiteHeader() {
                 About Us <ChevronDown className="h-4 w-4" />
               </button>
               {activeDropdown === "about" && (
-                <div className="absolute left-0 top-full mt-2 w-56 rounded-lg border border-border bg-background p-4 shadow-lg">
-                  <Link href="/about/history" className="block py-2 text-sm hover:text-primary">
-                    Our History
-                  </Link>
-                  <Link href="/about/beliefs" className="block py-2 text-sm hover:text-primary">
-                    What We Believe
-                  </Link>
-                  <Link href="/about/leadership" className="block py-2 text-sm hover:text-primary">
-                    Leadership Team
-                  </Link>
-                  <Link href="/about/mission" className="block py-2 text-sm hover:text-primary">
-                    Our Mission
-                  </Link>
+                <div className="absolute left-0 top-full pt-2">
+                  <div className="w-56 rounded-lg border border-border bg-background p-4 shadow-lg">
+                    <Link href="/about/history" className="block py-2 text-sm hover:text-primary">
+                      Our History
+                    </Link>
+                    <Link href="/about/beliefs" className="block py-2 text-sm hover:text-primary">
+                      What We Believe
+                    </Link>
+                    <Link href="/about/leadership" className="block py-2 text-sm hover:text-primary">
+                      Leadership Team
+                    </Link>
+                    <Link href="/about/mission" className="block py-2 text-sm hover:text-primary">
+                      Our Mission
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -66,22 +72,24 @@ export function SiteHeader() {
                 Ministries <ChevronDown className="h-4 w-4" />
               </button>
               {activeDropdown === "ministries" && (
-                <div className="absolute left-0 top-full mt-2 w-56 rounded-lg border border-border bg-background p-4 shadow-lg">
-                  <Link href="/ministries/youth" className="block py-2 text-sm hover:text-primary">
-                    Youth Ministry
-                  </Link>
-                  <Link href="/ministries/children" className="block py-2 text-sm hover:text-primary">
-                    Children's Ministry
-                  </Link>
-                  <Link href="/ministries/music" className="block py-2 text-sm hover:text-primary">
-                    Music Ministry
-                  </Link>
-                  <Link href="/ministries/health" className="block py-2 text-sm hover:text-primary">
-                    Health Ministry
-                  </Link>
-                  <Link href="/ministries/community" className="block py-2 text-sm hover:text-primary">
-                    Community Service
-                  </Link>
+                <div className="absolute left-0 top-full pt-2">
+                  <div className="w-56 rounded-lg border border-border bg-background p-4 shadow-lg">
+                    <Link href="/ministries/youth" className="block py-2 text-sm hover:text-primary">
+                      Youth Ministry
+                    </Link>
+                    <Link href="/ministries/children" className="block py-2 text-sm hover:text-primary">
+                      Children's Ministry
+                    </Link>
+                    <Link href="/ministries/music" className="block py-2 text-sm hover:text-primary">
+                      Music Ministry
+                    </Link>
+                    <Link href="/ministries/health" className="block py-2 text-sm hover:text-primary">
+                      Health Ministry
+                    </Link>
+                    <Link href="/ministries/community" className="block py-2 text-sm hover:text-primary">
+                      Community Service
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -95,19 +103,21 @@ export function SiteHeader() {
                 Resources <ChevronDown className="h-4 w-4" />
               </button>
               {activeDropdown === "resources" && (
-                <div className="absolute left-0 top-full mt-2 w-56 rounded-lg border border-border bg-background p-4 shadow-lg">
-                  <Link href="/resources/bible-study" className="block py-2 text-sm hover:text-primary">
-                    Bible Study Materials
-                  </Link>
-                  <Link href="/resources/sermons" className="block py-2 text-sm hover:text-primary">
-                    Sermon Archives
-                  </Link>
-                  <Link href="/resources/publications" className="block py-2 text-sm hover:text-primary">
-                    Publications
-                  </Link>
-                  <Link href="/resources/media" className="block py-2 text-sm hover:text-primary">
-                    Media Library
-                  </Link>
+                <div className="absolute left-0 top-full pt-2">
+                  <div className="w-56 rounded-lg border border-border bg-background p-4 shadow-lg">
+                    <Link href="/resources/bible-study" className="block py-2 text-sm hover:text-primary">
+                      Bible Study Materials
+                    </Link>
+                    <Link href="/resources/sermons" className="block py-2 text-sm hover:text-primary">
+                      Sermon Archives
+                    </Link>
+                    <Link href="/resources/publications" className="block py-2 text-sm hover:text-primary">
+                      Publications
+                    </Link>
+                    <Link href="/resources/media" className="block py-2 text-sm hover:text-primary">
+                      Media Library
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -140,13 +150,16 @@ export function SiteHeader() {
       {isMenuOpen && (
         <div className="border-t border-border lg:hidden">
           <nav className="container mx-auto flex flex-col gap-4 px-4 py-6">
-            <Link href="/about" className="text-sm font-medium">
+            <Link href="/" className="text-sm font-medium">
+              Home
+            </Link>
+            <Link href="/about/history" className="text-sm font-medium">
               About Us
             </Link>
-            <Link href="/ministries" className="text-sm font-medium">
+            <Link href="/ministries/youth" className="text-sm font-medium">
               Ministries
             </Link>
-            <Link href="/resources" className="text-sm font-medium">
+            <Link href="/resources/bible-study" className="text-sm font-medium">
               Resources
             </Link>
             <Link href="/events" className="text-sm font-medium">
