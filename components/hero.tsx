@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/10">
-      <div className="absolute inset-0 bg-[url('/abstract-light-pattern.png')] bg-cover bg-center opacity-5 pr-5 pr-5 pr-5" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/10 lg:-mr-44 lg:pr-44">
+      <div className="absolute inset-0 bg-[url('/abstract-light-pattern.png')] bg-cover bg-center opacity-5" />
 
       <div className="container relative mx-auto px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
