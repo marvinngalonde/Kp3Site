@@ -24,8 +24,8 @@ export function SiteHeader() {
               className="h-10 w-10"
             />
             <div className="flex flex-col">
-              <span className="text-lg font-bold leading-tight">KP3 SDA CHURCH</span>
-              <span className="text-xs text-muted-foreground">Kuwadzan Phase 3</span>
+              <span className="text-lg font-bold leading-tight">Kp3 SDA Church</span>
+              <span className="text-xs text-muted-foreground">Harare, Zimbabwe</span>
             </div>
           </Link>
 
