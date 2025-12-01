@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <div className="min-h-screen">
       <SiteHeader />
-      <main className="pr-10">
+      <main className="lg:pr-44">
         <Hero />
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
