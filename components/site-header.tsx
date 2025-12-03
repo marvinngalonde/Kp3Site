@@ -21,15 +21,15 @@ export function SiteHeader() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/images/design-mode/orange-logo.png"
+                src="/images/design-mode/phase-logo.png"
                 alt="Seventh-day Adventist Church Logo"
                 width={40}
                 height={40}
-                className="h-10 w-10"
+                className="h-10 w-30"
               />
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <span className="text-lg font-bold leading-tight text-white">Kp3 SDA Church</span>
-              </div>
+              </div> */}
             </Link>
 
             {/* Right-aligned Navigation and Actions */}

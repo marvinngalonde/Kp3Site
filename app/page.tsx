@@ -30,7 +30,7 @@ export default function Page() {
       </div>
 
       {/* Main Content */}
-      <main className="lg:pr-40">
+      <main className="lg:pr-40 bg-gradient-to-b from-stone-50 via-white to-stone-100">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">
