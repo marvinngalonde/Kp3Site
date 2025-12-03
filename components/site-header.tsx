@@ -15,7 +15,7 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-white/20 bg-transparent backdrop-blur supports-[backdrop-filter]:bg-black/20 lg:mr-40">
+      <header className="sticky top-0 z-50 border-none border-white/20 bg-transparent backdrop-blur supports-[backdrop-filter]:bg-black/20 lg:mr-40">
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}

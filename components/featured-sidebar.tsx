@@ -8,12 +8,16 @@ export function FeaturedSidebar() {
       {/* Featured Video */}
       <Card className="overflow-hidden">
         <div className="relative h-48">
-          <img src="/worship-service-live-stream.jpg" alt="Live Service" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary transition-transform hover:scale-110">
-              <Play className="h-8 w-8 text-primary-foreground" fill="currentColor" />
-            </div>
-          </div>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/iW1VBfhyfSQ"
+            title="Watch This Week's Service"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute inset-0 h-full w-full"
+          ></iframe>
         </div>
         <CardContent className="p-4">
           <h3 className="font-bold">Watch This Week's Service</h3>

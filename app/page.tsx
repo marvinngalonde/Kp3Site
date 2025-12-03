@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <div className="min-h-screen">
       {/* Background Image Section - Header + Hero */}
-      <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/chag.png')" }}>
+      <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/kidwork.png')" }}>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
 
