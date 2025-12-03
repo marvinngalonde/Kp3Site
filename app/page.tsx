@@ -17,9 +17,20 @@ import { RightSidebar } from "@/components/right-sidebar"
 export default function Page() {
   return (
     <div className="min-h-screen">
-      <SiteHeader />
-      <main className="lg:pr-44">
-        <Hero />
+      {/* Background Image Section - Header + Hero */}
+      <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/chag.png')" }}>
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
+        <div className="relative z-10">
+          <SiteHeader />
+          <Hero />
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <main className="lg:pr-40">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">

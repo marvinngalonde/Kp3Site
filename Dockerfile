@@ -13,9 +13,9 @@ RUN \
   if [ -f pnpm-lock.yaml ]; then \
     corepack enable pnpm && pnpm install --frozen-lockfile; \
   elif [ -f package-lock.json ]; then \
-    npm ci; \
+    npm ci --legacy-peer-deps; \
   else \
-    npm install; \
+    npm install --legacy-peer-deps; \
   fi
 
 # Stage 2: Builder

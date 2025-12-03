@@ -1,33 +1,42 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Lora, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+// Serif font for body text - traditional feel
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-serif",
+})
+
+// Sans-serif font for headlines - modern contrast
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
   title: "KP3 SDA Church - Kuwadzan Phase 3 Seventh-day Adventist Church",
   description:
     "Welcome to Kuwadzan Phase 3 Seventh-day Adventist Church. A community dedicated to worship, spiritual growth, and service. Join us as we grow in faith together.",
-  generator: "v0.app",
+  generator: "Ngaloseh",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/images/design-mode/orange-logo.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/images/design-mode/orange-logo.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/images/design-mode/orange-logo.png",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/images/design-mode/orange-logo.png",
   },
 }
 
@@ -38,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${lora.variable} ${inter.variable} font-serif antialiased`}>
         {children}
         <Analytics />
       </body>
