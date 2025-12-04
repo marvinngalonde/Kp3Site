@@ -39,7 +39,7 @@ const events = [
 
 export function UpcomingEvents() {
   return (
-    <section className="bg-accent/10 py-16 md:py-24">
+    <section className="py-16 md:py-24 relative" style={{ background: 'radial-gradient(at 20% 30%, #f97316 0%, transparent 50%), radial-gradient(at 80% 70%, #fdba74 0%, transparent 50%), radial-gradient(at 50% 50%, #fef3c7 0%, transparent 50%), linear-gradient(135deg, #fed7aa 0%, #fef3c7 100%)' }}>
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-balance text-3xl font-bold md:text-4xl">Upcoming Events</h2>

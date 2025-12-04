@@ -27,7 +27,7 @@ export function CommunityImpact() {
           </div>
 
           {/* Content */}
-          <div className="flex flex-col justify-center space-y-6">
+          <div className="flex flex-col justify-center space-y-6 bg-[#f5f5dc] p-8 rounded-2xl">
             <div>
               <div className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary">
                 Making a Difference

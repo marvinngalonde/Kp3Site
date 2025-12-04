@@ -36,7 +36,7 @@ const topics = [
 
 export function TopicsSection() {
   return (
-    <section className="bg-muted/30 py-16 md:py-24">
+    <section className="py-16 md:py-24 relative bg-stone-50" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'200\' height=\'200\' viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M100 0 C150 50 150 150 100 200 M100 0 C50 50 50 150 100 200 M0 100 C50 50 150 50 200 100 M0 100 C50 150 150 150 200 100 M50 50 Q100 75 150 50 M50 150 Q100 125 150 150 M50 50 Q75 100 50 150 M150 50 Q125 100 150 150\' stroke=\'%23d4d4d8\' stroke-width=\'0.5\' fill=\'none\' opacity=\'0.2\'/%3E%3C/svg%3E")' }}>
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-balance text-3xl font-bold md:text-4xl">Explore Topics</h2>
