@@ -40,6 +40,8 @@ export const metadata: Metadata = {
   },
 }
 
+import { RightSidebar } from "@/components/right-sidebar"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${lora.variable} ${inter.variable} font-serif antialiased`}>
         {children}
+        <RightSidebar />
         <Analytics />
       </body>
     </html>

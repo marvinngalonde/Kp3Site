@@ -8,27 +8,31 @@ export function SiteFooter() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <span className="text-xl font-bold text-primary-foreground">KP</span>
+            <Link href="/" className="flex items-center gap-3 mb-1">
+              <div className="relative h-32 w-42 overflow-hidden rounded-lg bg-white/10 p-1">
+                <img
+                  src="/images/design-mode/organge-bac-logo.png"
+                  alt="Kp3 SDA Church"
+                  className="h-full w-full object-contain"
+                />
               </div>
-              <span className="text-xl font-bold">Kingdom Path</span>
+              {/* <span className="text-2xl font-bold tracking-tight">Kp3 SDA Church</span> */}
             </Link>
-            <p className="mt-4 max-w-sm text-sm text-muted-foreground leading-relaxed">
-              A global faith community dedicated to spiritual growth, compassionate service, and transforming lives
+            <p className="mt-0 max-w-sm text-sm text-muted-foreground leading-relaxed">
+              A welcoming faith community in Kuwadzana Phase 3 dedicated to spiritual growth, compassionate service, and transforming lives
               through the message of hope.
             </p>
             <div className="mt-6 flex gap-4">
-              <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground">
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
@@ -118,7 +122,7 @@ export function SiteFooter() {
 
         <div className="mt-12 border-t border-border pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
-            <p>&copy; 2025 Kingdom Path. All rights reserved.</p>
+            <p>&copy; 2025 Kp3 SDA Church. All rights reserved.</p>
             <div className="flex gap-6">
               <Link href="/privacy" className="transition-colors hover:text-primary">
                 Privacy Policy

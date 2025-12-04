@@ -43,16 +43,13 @@ export default function Page() {
         </div>
         <MissionAreas />
         <FeaturedArticles />
-        <GlobalReach />
         <UpcomingEvents />
         <CommunityImpact />
         <TopicsSection />
-        <GlobalPresence />
         <ResourcesSection />
         <CallToAction />
       </main>
       <SiteFooter />
-      <RightSidebar />
     </div>
   )
 }

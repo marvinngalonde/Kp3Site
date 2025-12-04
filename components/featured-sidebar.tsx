@@ -36,7 +36,7 @@ export function FeaturedSidebar() {
             </Button>
             <Button variant="ghost" className="w-full justify-start gap-3">
               <Calendar className="h-4 w-4" />
-              Find a Local Congregation
+              Visitor Information
             </Button>
             <Button variant="ghost" className="w-full justify-start gap-3">
               <Play className="h-4 w-4" />
@@ -50,9 +50,9 @@ export function FeaturedSidebar() {
       <Card className="bg-primary text-primary-foreground">
         <CardContent className="p-6">
           <div className="mb-2 text-sm font-medium opacity-90">Coming Soon</div>
-          <h3 className="mb-3 text-xl font-bold">Global Day of Prayer</h3>
+          <h3 className="mb-3 text-xl font-bold">Week of Prayer</h3>
           <p className="mb-4 text-sm opacity-90 leading-relaxed">
-            Join millions around the world in unified prayer on November 18th
+            Join our church family for a special week of spiritual renewal starting November 18th
           </p>
           <Button variant="secondary" className="w-full gap-2">
             Learn More <ArrowRight className="h-4 w-4" />

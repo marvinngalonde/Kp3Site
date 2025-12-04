@@ -4,27 +4,27 @@ import { Card, CardContent } from "@/components/ui/card"
 const missions = [
   {
     icon: Heart,
-    title: "Compassionate Care",
-    description: "Operating hospitals, clinics, and health initiatives serving millions worldwide.",
-    stat: "8,600+ Health Facilities",
+    title: "Community Health",
+    description: "Promoting healthy living through health expos, cooking classes, and wellness seminars.",
+    stat: "Weekly Health Programs",
   },
   {
     icon: BookOpen,
-    title: "Education & Growth",
-    description: "Empowering through quality education from primary schools to universities.",
-    stat: "9,000+ Educational Institutions",
+    title: "Bible Study",
+    description: "Deepening faith through Sabbath School, mid-week prayer meetings, and small groups.",
+    stat: "Daily Study Guides",
   },
   {
     icon: Users,
     title: "Community Service",
-    description: "Addressing hunger, poverty, and disaster relief through humanitarian programs.",
-    stat: "150+ Countries Served",
+    description: "Serving our neighbors through food distribution, clothing drives, and support for the vulnerable.",
+    stat: "Monthly Outreach",
   },
   {
     icon: Globe,
-    title: "Global Mission",
-    description: "Sharing hope and spiritual guidance across cultures and continents.",
-    stat: "1,200+ Languages",
+    title: "Evangelism",
+    description: "Sharing the good news of Jesus Christ with our local community and beyond.",
+    stat: "Annual Campaigns",
   },
 ]
 
