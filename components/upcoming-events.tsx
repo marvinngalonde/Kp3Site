@@ -53,7 +53,7 @@ export function UpcomingEvents() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {events.map((event, index) => (
             <Card key={index} className="group relative overflow-hidden rounded-2xl border-none shadow-lg h-[420px]">
               
@@ -106,7 +106,7 @@ export function UpcomingEvents() {
         </div>
 
         <div className="mt-10 text-center">
-          <Button size="lg" className="bg-slate-900 text-white hover:bg-slate-800">View All Events</Button>
+          <Button size="lg" className="bg-orange-600 text-white hover:bg-slate-800">View All Events</Button>
         </div>
       </div>
     </section>
