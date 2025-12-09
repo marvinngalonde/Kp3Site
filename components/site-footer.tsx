@@ -43,22 +43,22 @@ export function SiteFooter() {
             <h3 className="mb-4 font-semibold">About</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/beliefs" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/about/beliefs" className="text-muted-foreground transition-colors hover:text-primary">
                   Our Beliefs
                 </Link>
               </li>
               <li>
-                <Link href="/leadership" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/about/leadership" className="text-muted-foreground transition-colors hover:text-primary">
                   Leadership
                 </Link>
               </li>
               <li>
-                <Link href="/history" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/about/history" className="text-muted-foreground transition-colors hover:text-primary">
                   Our History
                 </Link>
               </li>
               <li>
-                <Link href="/mission" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/about/mission" className="text-muted-foreground transition-colors hover:text-primary">
                   Mission & Vision
                 </Link>
               </li>
@@ -70,23 +70,23 @@ export function SiteFooter() {
             <h3 className="mb-4 font-semibold">Ministries</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/children" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/ministries/children" className="text-muted-foreground transition-colors hover:text-primary">
                   Children's Ministry
                 </Link>
               </li>
               <li>
-                <Link href="/youth" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/ministries/youth" className="text-muted-foreground transition-colors hover:text-primary">
                   Youth Programs
                 </Link>
               </li>
               <li>
-                <Link href="/family" className="text-muted-foreground transition-colors hover:text-primary">
-                  Family Life
+                <Link href="/ministries/health" className="text-muted-foreground transition-colors hover:text-primary">
+                  Health Ministry
                 </Link>
               </li>
               <li>
-                <Link href="/outreach" className="text-muted-foreground transition-colors hover:text-primary">
-                  Community Outreach
+                <Link href="/ministries/community" className="text-muted-foreground transition-colors hover:text-primary">
+                  Community Service
                 </Link>
               </li>
             </ul>
@@ -97,23 +97,23 @@ export function SiteFooter() {
             <h3 className="mb-4 font-semibold">Resources</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/bible-study" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/resources/bible-study" className="text-muted-foreground transition-colors hover:text-primary">
                   Bible Studies
                 </Link>
               </li>
               <li>
-                <Link href="/publications" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/resources/publications" className="text-muted-foreground transition-colors hover:text-primary">
                   Publications
                 </Link>
               </li>
               <li>
-                <Link href="/media" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/resources/media" className="text-muted-foreground transition-colors hover:text-primary">
                   Media Library
                 </Link>
               </li>
               <li>
-                <Link href="/donate" className="text-muted-foreground transition-colors hover:text-primary">
-                  Donate
+                <Link href="/give" className="text-muted-foreground transition-colors hover:text-primary">
+                  Give
                 </Link>
               </li>
             </ul>
@@ -124,11 +124,11 @@ export function SiteFooter() {
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
             <p>&copy; 2025 Kp3 SDA Church. All rights reserved.</p>
             <div className="flex gap-6">
-              <Link href="/privacy" className="transition-colors hover:text-primary">
-                Privacy Policy
+              <Link href="/about/mission" className="transition-colors hover:text-primary">
+                Mission
               </Link>
-              <Link href="/terms" className="transition-colors hover:text-primary">
-                Terms of Use
+              <Link href="/events" className="transition-colors hover:text-primary">
+                Events
               </Link>
               <Link href="/contact" className="transition-colors hover:text-primary">
                 Contact Us

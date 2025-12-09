@@ -1,6 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { RightSidebar } from "@/components/right-sidebar"
 import { Card } from "@/components/ui/card"
 import { Heart, BookOpen, Users, Globe, HandHeart, Sparkles } from "lucide-react"
 
@@ -40,11 +39,23 @@ export default function MissionPage() {
 
   return (
     <div className="min-h-screen">
-      <SiteHeader />
-      <main className="lg:pr-44">
-        <div className="container mx-auto px-4 py-12">
+      {/* Hero Section with Background */}
+      <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/chag.png')" }}>
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10">
+          <SiteHeader />
+          <div className="container mx-auto px-4 py-24 text-center lg:mr-40">
+            <h1 className="mb-4 text-4xl font-bold text-white md:text-5xl lg:text-6xl">Our Mission & Vision</h1>
+            <p className="mx-auto max-w-2xl text-lg text-white/90">
+              Transforming lives and impacting our community through biblical teaching, compassionate service, and authentic worship.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <main className="bg-gradient-to-b from-stone-50 via-white to-stone-100 py-16 lg:mr-40">
+        <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
-            <h1 className="text-4xl font-bold mb-6">Our Mission & Vision</h1>
 
             <section className="mb-12">
               <div className="bg-primary/5 p-8 rounded-lg mb-8">
@@ -149,7 +160,6 @@ export default function MissionPage() {
         </div>
       </main>
       <SiteFooter />
-      <RightSidebar />
     </div>
   )
 }

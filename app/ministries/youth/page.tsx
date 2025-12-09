@@ -1,6 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { RightSidebar } from "@/components/right-sidebar"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, Users, Trophy, BookOpen, Music, MessageCircle } from "lucide-react"
@@ -47,21 +46,22 @@ export default function YouthMinistryPage() {
 
   return (
     <div className="min-h-screen">
-      <SiteHeader />
-      <main className="lg:pr-44">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-br from-primary/10 to-accent/10 py-16">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-4xl text-center">
-              <h1 className="text-4xl font-bold mb-4">Youth Ministry</h1>
-              <p className="text-xl text-muted-foreground">
-                Empowering the next generation to live boldly for Christ
-              </p>
-            </div>
+      {/* Hero Section with Background */}
+      <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/kidwork.png')" }}>
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10">
+          <SiteHeader />
+          <div className="container mx-auto px-4 py-24 text-center lg:mr-40">
+            <h1 className="mb-4 text-4xl font-bold text-white md:text-5xl lg:text-6xl">Youth Ministry</h1>
+            <p className="mx-auto max-w-2xl text-lg text-white/90">
+              Empowering the next generation to live boldly for Christ
+            </p>
           </div>
         </div>
+      </div>
 
-        <div className="container mx-auto px-4 py-12">
+      <main className="bg-gradient-to-b from-stone-50 via-white to-stone-100 py-16 lg:mr-40">
+        <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <section className="mb-12">
               <h2 className="text-3xl font-semibold mb-6">About Our Youth Ministry</h2>
@@ -138,7 +138,6 @@ export default function YouthMinistryPage() {
         </div>
       </main>
       <SiteFooter />
-      <RightSidebar />
     </div>
   )
 }
